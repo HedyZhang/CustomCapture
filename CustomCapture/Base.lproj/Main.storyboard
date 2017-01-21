@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ND6-LL-LoB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DTf-sr-Fbn">
+            <objects>
+                <navigationController id="ND6-LL-LoB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8gw-6N-04M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TPh-x7-PnY" kind="relationship" relationship="rootViewController" id="xpA-jK-LYz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yob-Xu-Qja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-630" y="699"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1S9-eQ-03Q">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="TPh-x7-PnY" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rfB-E4-yFO"/>
+                        <viewControllerLayoutGuide type="bottom" id="hXi-9A-0sU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7c1-kF-PyL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2y-vv-XPt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.34706144989999999" green="1" blue="0.2301910536" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NMn-GN-Xcc"/>
+                                </constraints>
+                                <state key="normal" title="照相机">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NMn-GN-Xcc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="NMn-GN-Xcc"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="nYb-po-HsQ" kind="show" id="dQn-Ej-JOB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgS-yw-dQL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.34706144989999999" green="1" blue="0.2301910536" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YmB-Wl-cGw"/>
+                                </constraints>
+                                <state key="normal" title="二维码/条形码">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YmB-Wl-cGw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="YmB-Wl-cGw"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="9if-Bh-PcB" kind="show" id="rOK-Fv-SUq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9f-je-Rch">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.34706144989999999" green="1" blue="0.2301910536" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="o7k-9W-Sq8"/>
+                                </constraints>
+                                <state key="normal" title="Push Setting">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="o7k-9W-Sq8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="o7k-9W-Sq8"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="OeA-6N-qeG" kind="show" id="pTI-Su-9cN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PgS-yw-dQL" secondAttribute="trailing" constant="89" id="6HY-b5-IHy"/>
+                            <constraint firstAttribute="trailing" secondItem="j2y-vv-XPt" secondAttribute="trailing" constant="89" id="H9W-8S-wYX"/>
+                            <constraint firstItem="j2y-vv-XPt" firstAttribute="leading" secondItem="7c1-kF-PyL" secondAttribute="leading" constant="89" id="LLR-pk-yeq"/>
+                            <constraint firstItem="PgS-yw-dQL" firstAttribute="leading" secondItem="7c1-kF-PyL" secondAttribute="leading" constant="89" id="Qd3-Cd-Jfp"/>
+                            <constraint firstAttribute="centerX" secondItem="j2y-vv-XPt" secondAttribute="centerX" id="V0j-Gi-kes"/>
+                            <constraint firstItem="V9f-je-Rch" firstAttribute="top" secondItem="j2y-vv-XPt" secondAttribute="bottom" constant="96" id="WM5-al-hAc"/>
+                            <constraint firstAttribute="centerX" secondItem="PgS-yw-dQL" secondAttribute="centerX" id="WMF-rI-acE"/>
+                            <constraint firstAttribute="trailing" secondItem="V9f-je-Rch" secondAttribute="trailing" constant="89" id="Wno-HZ-BCV"/>
+                            <constraint firstItem="V9f-je-Rch" firstAttribute="leading" secondItem="7c1-kF-PyL" secondAttribute="leading" constant="89" id="d6s-eE-lZG"/>
+                            <constraint firstItem="PgS-yw-dQL" firstAttribute="top" secondItem="rfB-E4-yFO" secondAttribute="bottom" constant="88" id="hib-HD-sMo"/>
+                            <constraint firstItem="j2y-vv-XPt" firstAttribute="top" secondItem="PgS-yw-dQL" secondAttribute="bottom" constant="133" id="udn-Xj-QXn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="j2y-vv-XPt"/>
+                                <exclude reference="PgS-yw-dQL"/>
+                                <exclude reference="V9f-je-Rch"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6HY-b5-IHy"/>
+                                <exclude reference="Qd3-Cd-Jfp"/>
+                                <exclude reference="WMF-rI-acE"/>
+                                <exclude reference="hib-HD-sMo"/>
+                                <exclude reference="H9W-8S-wYX"/>
+                                <exclude reference="LLR-pk-yeq"/>
+                                <exclude reference="V0j-Gi-kes"/>
+                                <exclude reference="udn-Xj-QXn"/>
+                                <exclude reference="WM5-al-hAc"/>
+                                <exclude reference="Wno-HZ-BCV"/>
+                                <exclude reference="d6s-eE-lZG"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="j2y-vv-XPt"/>
+                                <include reference="PgS-yw-dQL"/>
+                                <include reference="V9f-je-Rch"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6HY-b5-IHy"/>
+                                <include reference="Qd3-Cd-Jfp"/>
+                                <include reference="WMF-rI-acE"/>
+                                <include reference="hib-HD-sMo"/>
+                                <include reference="H9W-8S-wYX"/>
+                                <include reference="LLR-pk-yeq"/>
+                                <include reference="V0j-Gi-kes"/>
+                                <include reference="udn-Xj-QXn"/>
+                                <include reference="WM5-al-hAc"/>
+                                <include reference="Wno-HZ-BCV"/>
+                                <include reference="d6s-eE-lZG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="k94-yg-2We"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cu-jE-mxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421.5" y="682.5"/>
+        </scene>
+        <!--照相机-->
+        <scene sceneID="LKB-YV-dWB">
+            <objects>
+                <viewController storyboardIdentifier="CaptureViewController" title="照相机" id="nYb-po-HsQ" customClass="CaptureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pY3-SZ-3qX"/>
+                        <viewControllerLayoutGuide type="bottom" id="LqO-zL-1ud"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LlW-VJ-7e5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MWp-0k-i5r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVJ-bs-cMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2124" y="445.5"/>
+        </scene>
+        <!--Push Setting View Controller-->
+        <scene sceneID="9t8-Zx-eE2">
+            <objects>
+                <viewController id="OeA-6N-qeG" customClass="PushSettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fdf-RZ-F1z"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Cn-JZ-l3U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pzh-Mu-ciD">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ILd-C6-MlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2136" y="1112.25"/>
+        </scene>
+        <!--二维码/条形码扫描-->
+        <scene sceneID="b1U-sa-YJc">
+            <objects>
+                <viewController storyboardIdentifier="QRViewController" title="二维码/条形码扫描" id="9if-Bh-PcB" customClass="QRViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zbt-2A-9af"/>
+                        <viewControllerLayoutGuide type="bottom" id="yDz-vF-Oxa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AYs-sy-6um">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZXn-Ib-EYx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zd8-gd-SmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2058" y="-190.5"/>
+        </scene>
+    </scenes>
+</document>
